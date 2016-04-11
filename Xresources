@@ -1,1 +1,80 @@
-../.Xresources
+! Copy pasting
+xterm*VT100.Translations: #override \
+                 Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
+
+! Share clipboard
+Xterm*selectToClipboard: true
+
+! Font
+XTerm*faceName: Consolas
+XTerm*faceSize: 15
+
+! --- ~/.Xresources ------------------------------------------------------------
+! ------------------------------------------------------------------------------
+! --- generated with 4bit Terminal Color Scheme Designer -----------------------
+! ------------------------------------------------------------------------------
+! --- http://ciembor.github.com/4bit -------------------------------------------
+! ------------------------------------------------------------------------------
+
+! --- special colors ---
+
+*background: #0d1926
+*foreground: #d9e6f2
+
+! --- standard colors ---
+
+! black
+*color0: #000000
+
+! bright_black
+*color8: #262626
+
+! red
+*color1: #ff0804
+
+! bright_red
+*color9: #FF7904
+
+! green
+*color2: #04ff08
+
+! bright_green
+*color10: #04CC07
+
+! yellow
+*color3: #fbff04
+
+! bright_yellow
+*color11: #fdff76
+
+! blue
+*color4: #0804ff
+
+! bright_blue
+*color12: #7876ff
+
+! magenta
+*color5: #ff04fb
+
+! bright_magenta
+*color13: #ff76fd
+
+! cyan
+*color6: #04fbff
+
+! bright_cyan
+*color14: #76fdff
+
+! white
+*color7: #d9d9d9
+
+! bright_white
+*color15: #ffffff
+
+
+! ------------------------------------------------------------------------------
+! --- end of terminal colors section -------------------------------------------
+! ------------------------------------------------------------------------------
+
+
