@@ -1,14 +1,16 @@
 ! Copy pasting
-xterm*VT100.Translations: #override \
+UXTerm*VT100.Translations: #override \
                  Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
                  Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
 
+
 ! Share clipboard
-Xterm*selectToClipboard: true
+UXTerm*selectToClipboard: true
 
 ! Font
-XTerm*faceName: Consolas
-XTerm*faceSize: 15
+UXTerm*locale: true
+UXTerm*faceName: Roboto Mono for Powerline
+UXTerm*faceSize: 15
 
 ! --- ~/.Xresources ------------------------------------------------------------
 ! ------------------------------------------------------------------------------
