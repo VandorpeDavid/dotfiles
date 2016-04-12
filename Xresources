@@ -33,7 +33,7 @@ UXTerm*faceSize: 15
 *color8: #262626
 
 ! red
-*color1: #ff0804
+*color1: #BD0300
 
 ! bright_red
 *color9: #FF7904
