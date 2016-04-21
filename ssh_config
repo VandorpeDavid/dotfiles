@@ -1,0 +1,22 @@
+#WiNA
+Host wina
+	HostName wina.ugent.be
+	Port 2222
+
+Host wina2
+	HostName wina2.ugent.be
+	Port 2222
+
+#FK
+Host foxtrot
+        HostName foxtrot.ugent.be
+        Port 2222
+
+Host kilo
+	HostName kilo.ugent.be
+	Port 2222
+
+Host fk
+	HostName fkgent.be
+	Port 2222
+
