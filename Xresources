@@ -9,7 +9,9 @@ UXTerm*selectToClipboard: true
 
 ! Font
 UXTerm*locale: true
-UXTerm*faceName: Roboto Mono for Powerline
+UXTerm*faceName: Meslo LG S for Powerline
+
+! UXTerm*faceName: DejaVu Sans Mono for Powerline
 UXTerm*faceSize: 15
 
 ! --- ~/.Xresources ------------------------------------------------------------
