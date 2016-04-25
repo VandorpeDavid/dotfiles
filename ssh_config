@@ -20,3 +20,7 @@ Host fk
 	HostName fkgent.be
 	Port 2222
 
+#Geografen
+Host we12s006
+	HostName we12s006.ugent.be
+	Port 1048
