@@ -20,7 +20,25 @@ Host fk
 	HostName fkgent.be
 	Port 2222
 
+Host fkenrolment
+	Hostname registratie.fkgent.be
+	Port 2222
+	User fk-enrolment
+
+Host gandalf
+	Hostname event.fkgent.be
+	Port 2222
+	User gandalf
+
 #Geografen
 Host we12s006
 	HostName we12s006.ugent.be
 	Port 1048
+
+Host cartogis
+	Hostname cartogis.ugent.be
+	Port 1048
+
+#Mezelf
+Host skaro # best entry ever!
+	Hostname skaro
