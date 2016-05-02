@@ -1,0 +1,9 @@
+# Volume control
+"amixer -c 0 set Master 5+"
+    Mod2 + XF86AudioRaiseVolume
+
+"amixer -c 0 set Master 5-"
+    Mod2 + XF86AudioLowerVolume
+
+"amixer -c 0 set Master toggle"
+   Mod2 + XF86AudioMute
