@@ -159,4 +159,8 @@ bar {
 # A bit like cd -
 workspace_auto_back_and_forth yes
 bindsym $mod+b exec i3lock-fancy
+bindsym $mod+x exec ~/bin/screen.sh
 new_window 1pixel
+
+# Dunst
+exec --no-startup-id dunst
