@@ -39,6 +39,18 @@ Host cartogis
 	Hostname cartogis.ugent.be
 	Port 1048
 
+Host geowiki
+	Hostname geowiki.ugent.be
+	Port 1048
+
+Host we12s007
+	Hostname we12s007.ugent.be
+	User bdewit
+	Port 1048
+
+Host crest
+	Hostname crest.ugent.be
+	Port 1048
 #Mezelf
 Host skaro # best entry ever!
 	Hostname skaro
