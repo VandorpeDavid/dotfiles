@@ -51,6 +51,15 @@ Host we12s007
 Host crest
 	Hostname crest.ugent.be
 	Port 1048
+
+Host we12s300
+	Hostname we12s300.ugent.be
+	Port 1048
+
+Host we12s010
+	Hostname we12s010.ugent.be
+	Port 1048
+
 #Mezelf
 Host skaro # best entry ever!
 	Hostname skaro
