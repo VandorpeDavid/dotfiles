@@ -1,3 +1,5 @@
+AddKeysToAgent yes
+
 #WiNA
 Host wina
 	HostName wina.ugent.be
@@ -45,7 +47,13 @@ Host geowiki
 
 Host we12s007
 	Hostname we12s007.ugent.be
-	User bdewit
+	Port 1048
+
+Host we12s008
+	Hostname we12s008.ugent.be
+
+Host we12s009
+	Hostname we12s009.ugent.be
 	Port 1048
 
 Host crest
@@ -56,10 +64,11 @@ Host we12s300
 	Hostname we12s300.ugent.be
 	Port 1048
 
-Host we12s010
+Host we12s010 # SeArch
 	Hostname we12s010.ugent.be
 	Port 1048
 
 #Mezelf
 Host skaro # best entry ever!
 	Hostname skaro
+

@@ -86,3 +86,10 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=vim
 
 eval "$(rbenv init -)"
+
+if ! pgrep -u $USER ssh-agent > /dev/null; then
+  ssh-agent > ~/.ssh-agent-pid
+fi
+if [[ "$SSH_AGENT_PID" == "" ]]; then
+  eval $(<~/.ssh-agent-pid) > /dev/null
+fi
