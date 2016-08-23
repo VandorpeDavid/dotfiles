@@ -93,3 +93,6 @@ fi
 if [[ "$SSH_AGENT_PID" == "" ]]; then
   eval $(<~/.ssh-agent-pid) > /dev/null
 fi
+
+eval "$(hub alias -s)"
+
