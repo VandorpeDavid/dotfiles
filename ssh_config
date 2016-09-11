@@ -64,7 +64,7 @@ Host we12s300
 	Hostname we12s300.ugent.be
 	Port 1048
 
-Host we12s010 # SeArch
+Host search
 	Hostname we12s010.ugent.be
 	Port 1048
 
