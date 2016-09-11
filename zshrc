@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/david/.oh-my-zsh
+export ZSH=/home/david/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -83,7 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export EDITOR=vim
+export EDITOR=nvim
 
 eval "$(rbenv init -)"
 
@@ -95,4 +95,5 @@ if [[ "$SSH_AGENT_PID" == "" ]]; then
 fi
 
 eval "$(hub alias -s)"
+alias vim=nvim
 
