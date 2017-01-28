@@ -72,3 +72,11 @@ Host search
 Host skaro # best entry ever!
 	Hostname skaro
 
+# Supercomputer UGent
+Host hpc
+    Hostname login.hpc.ugent.be
+    User vsc42107
+
+Host marchesa
+    Hostname 192.168.1.2
+    Port 2222
