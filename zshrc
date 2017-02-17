@@ -52,8 +52,9 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git)
 
 # User configuration
+export PATH="$HOME/.rbenv/bin:$PATH"
 
-export PATH="/home/david/bin:/home/david/.cabal/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+# export PATH="/home/david/bin:/home/david/.cabal/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -96,6 +97,5 @@ if [[ "$SSH_AGENT_PID" == "" ]]; then
   eval $(<~/.ssh-agent-pid) > /dev/null
 fi
 
-eval "$(hub alias -s)"
 alias vim=nvim
 
