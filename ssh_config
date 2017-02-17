@@ -80,3 +80,7 @@ Host hpc
 Host marchesa
     Hostname 192.168.1.2
     Port 2222
+
+Host vopro
+	Hostname vopro6.ugent.be
+	User root
