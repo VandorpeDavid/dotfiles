@@ -52,7 +52,8 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git)
 
 # User configuration
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/bin/:$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 # export PATH="/home/david/bin:/home/david/.cabal/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -85,7 +86,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export EDITOR=nvim
 
-eval "$(rbenv init -)"
 
 if ! pgrep -u $USER ssh-agent > /dev/null; then
   ssh-agent > ~/.ssh-agent-pid
@@ -96,3 +96,9 @@ fi
 
 alias vim=nvim
 
+
+#. $HOME/.asdf/asdf.sh
+
+#. $HOME/.asdf/completions/asdf.bash
+
+RTV_BROWSER=firefox
