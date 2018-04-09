@@ -1,7 +1,9 @@
 ! Copy pasting
 UXTerm*VT100.Translations: #override \
                  Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
-                 Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
+                 Ctrl Shift <Key>C:    copy-selection(CLIPBOARD) \n\
+      		 Ctrl <Key>F: scroll-back(1, page) \n\
+		 Ctrl <Key>V: scroll-forw(1, page)
 
 
 ! Share clipboard
