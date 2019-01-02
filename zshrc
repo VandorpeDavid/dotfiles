@@ -52,7 +52,8 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git)
 
 # User configuration
-export PATH="$HOME/bin/:$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/bin/:$HOME/.rbenv/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/go/bin:$PATH"
+
 eval "$(rbenv init -)"
 
 # export PATH="/home/david/bin:/home/david/.cabal/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"

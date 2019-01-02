@@ -104,6 +104,52 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
+bindsym Control+1 workspace 11
+bindsym Control+2 workspace 12
+bindsym Control+3 workspace 13
+bindsym Control+4 workspace 14
+bindsym Control+5 workspace 15
+bindsym Control+6 workspace 26
+bindsym Control+7 workspace 27
+bindsym Control+8 workspace 28
+bindsym Control+9 workspace 29
+bindsym Control+0 workspace 20
+
+workspace 1 output eDP-1
+workspace 2 output eDP-1
+workspace 3 output eDP-1
+workspace 4 output eDP-1
+workspace 5 output eDP-1
+workspace 6 output eDP-1
+workspace 6 output eDP-1
+workspace 7 output eDP-1
+workspace 8 output eDP-1
+workspace 9 output eDP-1
+workspace 10 output eDP-1
+
+workspace 11 output HDMI-1
+workspace 12 output HDMI-1
+workspace 13 output HDMI-1
+workspace 14 output HDMI-1
+workspace 15 output HDMI-1
+workspace 16 output HDMI-1
+workspace 16 output HDMI-1
+workspace 17 output HDMI-1
+workspace 18 output HDMI-1
+workspace 19 output HDMI-1
+workspace 20 output HDMI-1
+
+workspace 21 output DP-1
+workspace 22 output DP-1
+workspace 23 output DP-1
+workspace 24 output DP-1
+workspace 25 output DP-1
+workspace 26 output DP-1
+workspace 26 output DP-1
+workspace 27 output DP-1
+workspace 28 output DP-1
+workspace 29 output DP-1
+workspace 30 output DP-1
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
@@ -115,6 +161,17 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
+
+bindsym Control+Shift+1 move container to workspace 11
+bindsym Control+Shift+2 move container to workspace 12
+bindsym Control+Shift+3 move container to workspace 13
+bindsym Control+Shift+4 move container to workspace 14
+bindsym Control+Shift+5 move container to workspace 15
+bindsym Control+Shift+6 move container to workspace 26
+bindsym Control+Shift+7 move container to workspace 27
+bindsym Control+Shift+8 move container to workspace 28
+bindsym Control+Shift+9 move container to workspace 29
+bindsym Control+Shift+0 move container to workspace 20
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -154,6 +211,22 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+	output eDP-1
+	tray_output primary
+}
+
+bar {
+	output DP-1
+	tray_output none
+	mode hide
+	modifier Control
+}
+
+bar {
+	output HDMI-1
+	tray_output none
+	mode hide
+	modifier Control
 }
 
 # A bit like cd -
@@ -163,6 +236,10 @@ bindsym $mod+x exec ~/bin/screen.sh
 new_window 1pixel
 
 # Dunst
-exec --no-startup-id dunst
+exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
+
+# Triple monitor setup
+exec --no-startup-id xrandr --output DP-1 --mode 1680x1050 --pos 1680x1080 --rotate normal --output HDMI-1 --mode 1680x1050 --pos 0x2130 --rotate normal --output eDP-1 --primary --mode 1920x1080 --pos 3360x0 --rotate normal --output HDMI-2 --off
+
 
 bindsym $mod+z workspace back_and_forth
