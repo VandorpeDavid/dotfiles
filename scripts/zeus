@@ -1,9 +1,0 @@
-#!/bin/bash
-case $1 in
-  "open")
-    curl http://10.0.1.5 -d'{"text":"open","token":"foobar"}'
-    ;;
-  "close")
-    curl http://10.0.1.5 -d'{"text":"close","token":"foobar"}'
-    ;;
-esac
