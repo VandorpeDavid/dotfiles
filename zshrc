@@ -52,7 +52,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git)
 
 # User configuration
-export PATH="$HOME/bin/:$HOME/.rbenv/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/go/bin:$PATH"
+export PATH="$HOME/bin/:$HOME/.rbenv/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/go/bin:$PATH:$HOME/.local/bin"
 
 eval "$(rbenv init -)"
 
