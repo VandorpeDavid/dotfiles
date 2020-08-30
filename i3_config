@@ -30,7 +30,9 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec uxterm
+bindsym $mod+Return exec gnome-terminal --hide-menubar
+
+#bindsym $mod+Return exec uxterm
 
 # kill focused window
 bindsym $mod+q kill
@@ -213,6 +215,7 @@ bar {
         status_command i3status
 	output eDP-1
 	tray_output primary
+	mode hide
 }
 
 bar {
