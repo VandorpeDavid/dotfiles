@@ -1,0 +1,20 @@
+diff --git a/src/con.c b/src/con.c
+index d0039ca5..47621ae6 100644
+--- a/src/con.c
++++ b/src/con.c
+@@ -2319,6 +2319,15 @@ gaps_t calculate_effective_gaps(Con *con) {
+                       (TAILQ_FIRST(&(workspace->nodes_head))->layout == L_TABBED ||
+                        TAILQ_FIRST(&(workspace->nodes_head))->layout == L_STACKED));
+ 
++    if (one_child) {
++        if (con->window != NULL) {
++            struct Window* window = con->window;
++            if(strcmp(window->class_instance, "st") == 0 && strcmp(window->class_class, "St") == 0) {
++                one_child = false;
++            }
++        }
++    }
++
+     if (config.smart_gaps == SMART_GAPS_ON && one_child)
+         return (gaps_t){0, 0, 0, 0, 0};
+ 
