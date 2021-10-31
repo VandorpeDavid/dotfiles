@@ -1,0 +1,32 @@
+From 17ce202f4237052c985f85c8736c9af03d8dc040 Mon Sep 17 00:00:00 2001
+From: David Vandorpe <david.vandorpe2@gmail.com>
+Date: Sun, 31 Oct 2021 23:58:31 +0100
+Subject: [PATCH] Customisation
+
+---
+ src/con.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/src/con.c b/src/con.c
+index d0039ca5..35f0a4d0 100644
+--- a/src/con.c
++++ b/src/con.c
+@@ -2319,6 +2319,15 @@ gaps_t calculate_effective_gaps(Con *con) {
+                       (TAILQ_FIRST(&(workspace->nodes_head))->layout == L_TABBED ||
+                        TAILQ_FIRST(&(workspace->nodes_head))->layout == L_STACKED));
+ 
++    if (one_child) {
++        if (con->window != NULL) {
++            struct Window* window = con->window;
++            if(strcmp(window->class_instance, "st-256color") == 0 && strcmp(window->class_class, "st-256color") == 0) {
++                one_child = false;
++            }
++        }
++    }
++
+     if (config.smart_gaps == SMART_GAPS_ON && one_child)
+         return (gaps_t){0, 0, 0, 0, 0};
+ 
+-- 
+2.25.1
+

@@ -1,1 +1,1 @@
-nohup uxterm > /dev/null 2>&1 &
+nohup gnome-terminal > /dev/null 2>&1 &

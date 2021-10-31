@@ -5,7 +5,7 @@ export ZSH=/home/david/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -54,6 +54,10 @@ plugins=(git)
 # User configuration
 export PATH="$HOME/bin/:$HOME/.rbenv/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/go/bin:$PATH:$HOME/.local/bin"
 
+# GO
+export PATH=$PATH:/usr/local/go/bin
+
+# uncomment when rbenv is installed
 eval "$(rbenv init -)"
 
 # export PATH="/home/david/bin:/home/david/.cabal/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
